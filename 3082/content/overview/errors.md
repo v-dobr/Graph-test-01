@@ -22,7 +22,7 @@ La siguiente tabla enumera y describe los códigos de estado HTTP que se pueden 
 | 404         | No encontrado                       | El recurso solicitado no existe.                                                                                                  |
 | 405         | Método no permitido              | No se permite el método HTTP de la solicitud en el recurso.                                                                         |
 | 406         | No es aceptable                  | Este servicio no es compatible con el formato solicitado en el encabezado Accept.                                                                |
-| 409         | Conflict                        | El estado actual entra en conflicto con lo que la solicitud espera. Por ejemplo, la carpeta principal especificada podría no existir.                   |
+| 409         | Conflicto                        | El estado actual entra en conflicto con lo que la solicitud espera. Por ejemplo, la carpeta principal especificada podría no existir.                   |
 | 410         | Pasado                            | El recurso solicitado ya no está disponible en el servidor.                                               |
 | 411         | Longitud requerida                 | Se requiere un encabezado Content-Length en la solicitud.                                                                                    |
 | 412         | Error de condición previa             | Una condición previa proporcionada en la solicitud (por ejemplo, un encabezado if-match) no coincide con el estado actual del recurso.                       |

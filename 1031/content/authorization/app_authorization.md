@@ -106,7 +106,7 @@ grant_type=authorization_code
 | *client_secret*  | string | Der für Ihre App erstellte Schlüssel. Dieser Wert ist mit dem Wert im Abschnitt **Schlüssel** der Seite für die App-Konfiguration im Azure-Verwaltungsportal identisch.|
 | *redirect_uri*  | string | Die Umleitungs-URL, an die der Browser gesendet wird, wenn die Authentifizierung abgeschlossen ist.  |
 | *code*  | string | Der Autorisierungscode. Der `code`-Abfrageparameterwert, der von der Antwort an die Autorisierungsanforderung zurückgegeben wird. |
-| *resource*   | string | Die Ressource, auf die Sie zugreifen möchten. Legen Sie diesen Parameterwert auf „https://graph.microsoft.com/“ fest, um die Microsoft Graph-API aufzurufen.|
+| *resource*   | string | Die Ressource, auf die Sie zugreifen möchten. Legen Sie diesen Parameterwert auf "https://graph.microsoft.com/" fest, um die Microsoft Graph-API aufzurufen.|
 
 Der folgende Ausschnitt zeigt ein Beispiel für die Anforderungsnutzlast, die verwendet wird, um das anfängliche OAuth 2.0-Zugriffstoken zu erhalten:
 

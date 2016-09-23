@@ -50,7 +50,7 @@ Microsoft Graph 公开了两个终结点。公开发布的终结点 /v1.0 和预
 
 ![Microsoft Graph API 开发者堆栈。](./images/MicrosoftGraph_DevStack.png)
 
- >  我们非常重视您的反馈意见。请在[堆栈溢出](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph)上与我们联系。使用 [MicrosoftGraph] 和 [office365] 标记出您的问题。
+ >  我们非常重视您的反馈意见。请在[Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph)上与我们联系。使用 [MicrosoftGraph] 和 [office365] 标记出您的问题。
 
 
 

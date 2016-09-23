@@ -97,7 +97,7 @@ Microsoft Graph API には次のような利点があります。
 
 
 
-  > お客様からのフィードバックを重視しています。[スタック・オーバーフロー](http://stackoverflow.com/questions/tagged/office365)でご連絡いただけます。質問には [MicrosoftGraph] と [office365] でタグ付けしてください。
+  > お客様からのフィードバックを重視しています。[Stack Overflow](http://stackoverflow.com/questions/tagged/office365)でご連絡いただけます。質問には [MicrosoftGraph] と [office365] でタグ付けしてください。
 
 
 

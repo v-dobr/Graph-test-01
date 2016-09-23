@@ -50,7 +50,7 @@ Microsoft Graph 開発者スタックとそのしくみを次の図に示しま�
 
 ![Microsoft Graph API 開発者のスタック。](./images/MicrosoftGraph_DevStack.png)
 
- >  お客様からのフィードバックを重視しています。[スタック・オーバーフロー](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph)でご連絡いただけます。質問には [MicrosoftGraph] と [office365] でタグ付けしてください。
+ >  お客様からのフィードバックを重視しています。[Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph)でご連絡いただけます。質問には [MicrosoftGraph] と [office365] でタグ付けしてください。
 
 
 

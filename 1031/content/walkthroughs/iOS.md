@@ -54,7 +54,7 @@ Initialisieren Sie diesen dann mit dem Speicherort der entsprechenden Stelle (�
     self.context = [ADAuthenticationContext authenticationContextWithAuthority:self.authority]; 
 
 
-Im [ios-objectivec-connect-rest-sample](https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample)Beispiel wird eine Singleton-Authentifizierungsklasse (**AuthenticationManager**) erstellt, um zu veranschaulichen, dass diese mit der entsprechenden Authentifizierungsstelle und den erforderlichen Parametern initialisiert ist. Diese Klasse dienst lediglich als Beispiel für den Authentifizierungsworkflow. Ein für Sie interessanter Codeausschnitt: 
+Im [ios-objectivec-connect-rest-sample](https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample)-Beispiel wird eine Singleton-Authentifizierungsklasse (**AuthenticationManager**) erstellt, um zu veranschaulichen, dass diese mit der entsprechenden Authentifizierungsstelle und den erforderlichen Parametern initialisiert ist. Diese Klasse dienst lediglich als Beispiel für den Authentifizierungsworkflow. Ein für Sie interessanter Codeausschnitt: 
 
 
 

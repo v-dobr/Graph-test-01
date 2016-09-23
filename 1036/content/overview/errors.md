@@ -23,7 +23,7 @@ Le tableau suivant répertorie et décrit les codes d’état HTTP pouvant être
 | 404         | Introuvable                       | La ressource demandée n’existe pas.                                                                                                  |
 | 405         | Méthode non autorisée              | La méthode HTTP dans la demande n’est pas autorisée sur la ressource.                                                                         |
 | 406         | Non acceptable                  | Ce service ne prend pas en charge le format demandé dans l’en-tête Accept.                                                                |
-| 409         | Conflict                        | L’état actuel n’est pas compatible avec les attentes de la demande. Par exemple, le dossier parent spécifié n’existe peut-être pas.                   |
+| 409         | Conflit                        | L’état actuel n’est pas compatible avec les attentes de la demande. Par exemple, le dossier parent spécifié n’existe peut-être pas.                   |
 | 410         | Non disponible                            | La ressource demandée n’est plus disponible sur le serveur.                                               |
 | 411         | Longueur requise                 | Un en-tête Content-Length est requise sur la demande.                                                                                    |
 | 412         | Échec de la condition préalable             | Une condition préalable fournie dans la demande (un en-tête if-match, par exemple) ne correspond pas à l’état actuel de la ressource.                       |

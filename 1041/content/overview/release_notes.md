@@ -146,7 +146,7 @@ Microsoft Graph をサポートするアプリケーションと委任された�
 * ワークロード間でのフィルター/検索は利用できません。 
 * フルテキスト検索 (**$search** を使用した検索) はメッセージなどのいくつかのエンティティに対してのみ使用できます。
 
-  >  お客様からのフィードバックを重視しています。 [スタック オーバーフロー](http://stackoverflow.com/questions/tagged/office365)でご連絡いただけます。 質問には [MicrosoftGraph] と [office365] でタグ付けしてください。
+  >  お客様からのフィードバックを重視しています。 [Stack Overflow](http://stackoverflow.com/questions/tagged/office365)でご連絡いただけます。 質問には [MicrosoftGraph] と [office365] でタグ付けしてください。
 
   
              .

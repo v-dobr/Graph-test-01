@@ -40,9 +40,9 @@ L’autorisation d’une application commence par l’envoi d’une demande GET 
 
 | Nom du paramètre  | Valeur  | Description                                                                                            |
 |:----------------|:-------|:-------------------------------------------------------------------------------------------------------|
-| *client_id*     | chaîne | ID client créé pour votre application. Il s’agit de la valeur **ID CLIENT** de votre application, définie dans le registre d’application du client Azure.                                                                  |
-| *response_type* | chaîne | Spécifie le type de réponse demandé. Dans une demande d’octroi de code d’autorisation, la valeur doit être un code. |
-| *redirect_uri*  | chaîne | URL de redirection vers laquelle est renvoyé le navigateur à la fin de l’authentification.  Cette valeur doit correspondre à la valeur **URL DE RÉPONSE** préconfigurée de l’application.                        |
+| *client_id*     | string | ID client créé pour votre application. Il s’agit de la valeur **ID CLIENT** de votre application, définie dans le registre d’application du client Azure.                                                                  |
+| *response_type* | string | Spécifie le type de réponse demandé. Dans une demande d’octroi de code d’autorisation, la valeur doit être un code. |
+| *redirect_uri*  | string | URL de redirection vers laquelle est renvoyé le navigateur à la fin de l’authentification.  Cette valeur doit correspondre à la valeur **URL DE RÉPONSE** préconfigurée de l’application.                        |
  
 
 
@@ -102,11 +102,11 @@ grant_type=authorization_code
 
 | Nom du paramètre  | Valeur  | Description                                                                                            |
 |:----------------|:-------|:-------------------------------------------------------------------------------------------------------|
-| *client_id*     | chaîne | ID client créé pour votre application.  |
-| *client_secret*  | chaîne | Clé créée pour votre application. Cette valeur est identique à la valeur de la section **Clés** de la page de configuration de l’application sur le portail de gestion Azure.|
-| *redirect_uri*  | chaîne | URL de redirection vers laquelle est renvoyé le navigateur à la fin de l’authentification.  |
-| *code*  | chaîne | Code d’autorisation. Valeur du paramètre de requête `code` renvoyée depuis la réponse à la demande d’autorisation. |
-| *ressource*   | chaîne | Ressource à laquelle vous souhaitez accéder. Pour appeler l’API Microsoft Graph, définissez cette valeur de paramètre sur « https://graph.microsoft.com/ ».|
+| *client_id*     | string | ID client créé pour votre application.  |
+| *client_secret*  | string | Clé créée pour votre application. Cette valeur est identique à la valeur de la section **Clés** de la page de configuration de l’application sur le portail de gestion Azure.|
+| *redirect_uri*  | string | URL de redirection vers laquelle est renvoyé le navigateur à la fin de l’authentification.  |
+| *code*  | string | Code d’autorisation. Valeur du paramètre de requête `code` renvoyée depuis la réponse à la demande d’autorisation. |
+| *ressource*   | string | Ressource à laquelle vous souhaitez accéder. Pour appeler l’API Microsoft Graph, définissez cette valeur de paramètre sur « https://graph.microsoft.com/ ».|
 
 L’extrait de code suivant montre un exemple de la charge de demande utilisée pour acquérir le jeton d’accès OAuth 2.0 initial :
 
@@ -176,11 +176,11 @@ grant_type=refresh_token
 
 | Nom du paramètre  | Valeur  | Description                                                                                                                                         |
 |:----------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
-| *client_id*     | chaîne | ID client créé pour votre application.  |
-| *redirect_uri*  | chaîne | URL de redirection vers laquelle est renvoyé le navigateur à la fin de l’authentification. Celle-ci doit correspondre à la valeur *redirect_uri* utilisée dans la première demande. |
-| *client_secret* | chaîne | Une des valeurs clés créées pour votre application.                                                                                                     |
-| *refresh_token* | chaîne | Jeton d’actualisation que vous avez reçu précédemment.    |
-| *ressource*      | chaîne | Ressource à laquelle vous souhaitez accéder.|
+| *client_id*     | string | ID client créé pour votre application.  |
+| *redirect_uri*  | string | URL de redirection vers laquelle est renvoyé le navigateur à la fin de l’authentification. Celle-ci doit correspondre à la valeur *redirect_uri* utilisée dans la première demande. |
+| *client_secret* | string | Une des valeurs clés créées pour votre application.                                                                                                     |
+| *refresh_token* | string | Jeton d’actualisation que vous avez reçu précédemment.    |
+| *ressource*      | string | Ressource à laquelle vous souhaitez accéder.|
 
 Notez que cette demande est presque identique à la demande d’acquisition de jeton initiale. 
 Il existe deux différences dans la charge de la demande : le paramètre `grant_type` a maintenant la valeur de `refresh_token` (au lieu de `code`).

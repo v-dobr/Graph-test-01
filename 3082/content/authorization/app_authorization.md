@@ -39,9 +39,9 @@ La autorización de una aplicación se inicia con el envío de una solicitud HTT
 
 | Nombre del parámetro  | Valor  | Descripción                                                                                            |
 |:----------------|:-------|:-------------------------------------------------------------------------------------------------------|
-| *client_id*     | cadena | ID de cliente creado para su aplicación. Este es el valor de **ID. DE CLIENTE** de su aplicación establecido en el registro de la aplicación del inquilino de Azure.                                                                  |
-| *response_type* | cadena | Especifica el tipo de respuesta solicitada. En una solicitud de concesión de código de autorización, el valor debe ser el código. |
-| *redirect_uri*  | cadena | Dirección URL de redireccionamiento a la que se envía el explorador una vez finalizada la autenticación.  Este valor debe coincidir con el valor **URL DE RESPUESTA** previamente configurado.                        |
+| *client_id*     | string | ID de cliente creado para su aplicación. Este es el valor de **ID. DE CLIENTE** de su aplicación establecido en el registro de la aplicación del inquilino de Azure.                                                                  |
+| *response_type* | string | Especifica el tipo de respuesta solicitada. En una solicitud de concesión de código de autorización, el valor debe ser el código. |
+| *redirect_uri*  | string | Dirección URL de redireccionamiento a la que se envía el explorador una vez finalizada la autenticación.  Este valor debe coincidir con el valor **URL DE RESPUESTA** previamente configurado.                        |
  
 
 
@@ -97,11 +97,11 @@ grant_type=authorization_code
 
 | Nombre del parámetro  | Valor  | Descripción                                                                                            |
 |:----------------|:-------|:-------------------------------------------------------------------------------------------------------|
-| *client_id*     | cadena | ID de cliente creado para su aplicación.  |
-| *client_secret*  | cadena | Clave creada para su aplicación. Este valor es el mismo que el de la sección **Claves** de la página de configuración de la aplicación del Portal de administración de Azure.|
-| *redirect_uri*  | cadena | Dirección URL de redireccionamiento a la que se envía el explorador una vez finalizada la autenticación.  |
-| *código*  | cadena | El código de autorización. Valor del parámetro de consulta `code` que devuelva la respuesta a la solicitud de autorización. |
-| *recurso*   | cadena | El recurso al que desea tener acceso. Para llamar a la API de Microsoft Graph, establezca el valor de este parámetro en "https://graph.microsoft.com/".|
+| *client_id*     | string | ID de cliente creado para su aplicación.  |
+| *client_secret*  | string | Clave creada para su aplicación. Este valor es el mismo que el de la sección **Claves** de la página de configuración de la aplicación del Portal de administración de Azure.|
+| *redirect_uri*  | string | Dirección URL de redireccionamiento a la que se envía el explorador una vez finalizada la autenticación.  |
+| *código*  | string | El código de autorización. Valor del parámetro de consulta `code` que devuelva la respuesta a la solicitud de autorización. |
+| *recurso*   | string | El recurso al que desea tener acceso. Para llamar a la API de Microsoft Graph, establezca el valor de este parámetro en "https://graph.microsoft.com/".|
 
 El fragmento de código siguiente muestra un ejemplo de la carga de solicitud usada para adquirir el token de acceso inicial de OAuth 2.0:
 
@@ -169,11 +169,11 @@ grant_type=refresh_token
 
 | Nombre del parámetro  | Valor  | Descripción                                                                                                                                         |
 |:----------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
-| *client_id*     | cadena | ID de cliente que se crea para su aplicación.  |
-| *redirect_uri*  | cadena | Dirección URL de redireccionamiento a la que se envía el explorador una vez finalizada la autenticación. Debe coincidir con el valor del parámetro *redirect_uri* que se usó en la primera solicitud. |
-| *client_secret* | cadena | Uno de los valores de la sección Claves creados para la aplicación.                                                                                                     |
-| *refresh_token* | cadena | El token de actualización que recibió antes.    |
-| *recurso*      | cadena | El recurso al que desea tener acceso.|
+| *client_id*     | string | ID de cliente que se crea para su aplicación.  |
+| *redirect_uri*  | string | Dirección URL de redireccionamiento a la que se envía el explorador una vez finalizada la autenticación. Debe coincidir con el valor del parámetro *redirect_uri* que se usó en la primera solicitud. |
+| *client_secret* | string | Uno de los valores de la sección Claves creados para la aplicación.                                                                                                     |
+| *refresh_token* | string | El token de actualización que recibió antes.    |
+| *recurso*      | string | El recurso al que desea tener acceso.|
 
 Tenga en cuenta que esta solicitud es casi idéntica a la solicitud de adquisición inicial del token. Hay dos diferencias en la carga de la solicitud. Más concretamente, el parámetro `grant_type` ahora tiene el valor del parámetro `refresh_token` en lugar del valor de `code`.
  

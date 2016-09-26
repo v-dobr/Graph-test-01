@@ -106,7 +106,7 @@ grant_type=authorization_code
 | *client_secret*  | string | Clé créée pour votre application. Cette valeur est identique à la valeur de la section **Clés** de la page de configuration de l’application sur le portail de gestion Azure.|
 | *redirect_uri*  | string | URL de redirection vers laquelle est renvoyé le navigateur à la fin de l’authentification.  |
 | *code*  | string | Code d’autorisation. Valeur du paramètre de requête `code` renvoyée depuis la réponse à la demande d’autorisation. |
-| *ressource*   | string | Ressource à laquelle vous souhaitez accéder. Pour appeler l’API Microsoft Graph, définissez cette valeur de paramètre sur « https://graph.microsoft.com/ ».|
+| *ressource*   | string | Ressource à laquelle vous souhaitez accéder. Pour appeler l’API Microsoft Graph, définissez cette valeur de paramètre sur "https://graph.microsoft.com/". |
 
 L’extrait de code suivant montre un exemple de la charge de demande utilisée pour acquérir le jeton d’accès OAuth 2.0 initial :
 
